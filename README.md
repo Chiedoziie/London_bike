@@ -1,4 +1,5 @@
-London Bike Data ETL Pipeline
+                                                        -London Bike Data ETL Pipeline-
+
 Overview
 This project is an ETL (Extract, Transform, Load) pipeline for London bike-sharing data. It demonstrates how to extract data, transform it by applying meaningful calculations, and load it into a PostgreSQL database for further analysis.
 
@@ -7,20 +8,29 @@ The pipeline is modular, consisting of three stages:
 Extract: Loads raw bike data from a CSV file.
 Transform: Renames columns, calculates new fields, and enriches the dataset.
 Load: Saves the transformed dataset into a PostgreSQL database.
+
+
+
 Features
 Modularized ETL pipeline with separate files for extract.py, transform.py, and load.py.
 Transformation tasks include:
 Renaming columns for better readability.
 Adding calculated columns (e.g., humidity ratio, weather names, season names).
 Database integration using SQLAlchemy to store transformed data into a PostgreSQL database.
+
+
+
+
 Technologies Used
 Python: Core programming language.
 Pandas: For data manipulation and transformation.
 SQLAlchemy: For database connection and data loading.
 PostgreSQL: Relational database for storing the final dataset.
+
+
 Directory Structure
 graphql
-Copy code
+
 London_Bike/
 ├── datasets/                  # Directory containing the raw CSV file
 │   └── london_merged.csv      # Raw dataset used in the pipeline
@@ -32,23 +42,23 @@ London_Bike/
 ├── london_bikes_final.xlsx    # Transformed data saved as an Excel file
 ├── .gitignore                 # Lists files to ignore in version control
 └── README.md                  # Project documentation
+
 Setup and Installation
 1. Clone the Repository
 bash
 Copy code
 git clone https://github.com/username/London_Bike.git
 cd London_Bike
+
 2. Create a Virtual Environment
-bash
-Copy code
+
 python -m venv .venv
 source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+
 3. Install Required Dependencies
 Install the required Python packages:
-
-bash
-Copy code
 pip install -r requirements.txt
+
 4. Configure Database
 Create a PostgreSQL database (e.g., london_bike).
 
